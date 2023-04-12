@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Horóscopo</title>
+</head>
+
+<body>
+
+   <div class="conteiner">
+
+      <h1>SIGNOS</h1>
+
+      <input id="signos" type="text" value="">
+      <button onclick="escolhaSigno()">Selecione o Signo</button>
+      <div id="frase">
+         <P></P>
+      </div>
+      <div id="imagem"><img
+            src="https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Aries-shutterstock-1.jpg" alt=""
+            id="img" width="150px"></div><!--Mudar a imagem-->
+
+            <footer><a href="mailto:email@andressapereiradossantos09@gmail.com">andressapereiradossantos09@gmail.com</a></footer>
+
+
+      <script>
+         function escolhaSigno() {
+            var imagem = document.getElementById('img')/*Mudar a imagem*/
+            var text;
+            var signo = document.getElementById("signos").value;
+
+
+            switch (signo) {
+               case "Áries":
+                  text = "Características positivas dos arianos: se coloca em primeiro lugar, mas sem esquecer dos demais à sua volta! Motiva as pessoas e é prestativo, além de perseverante e apaixonado.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Aries-shutterstock-1.jpg'/*Mudar a imagem*/
+
+                  break;
+
+               case "Touro":
+                  text = "Características positivas dos taurinos: cuidadoso com tudo e com todos, é paciente e produtivo. Desse modo, são pessoas em que se podem confiar e costumam ser muito fiéis.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Touro-shutterstock_1-1.jpg'
+
+                  break;
+
+               case "Gêmios":
+                  text = "Características positivas dos geminianos: animados e comunicativos, eles tem a mente aberta e são muito espertos.";
+                  imagem.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyEUC2shF4evneQhSE75ZFwbeS7QypW1AsA&usqp=CAU'
+
+                  break;
+
+               case "Câncer":
+                  text = "Características positivas dos cancerianos: são dedicados e gentis, sempre ouvindo ou cuidando de alguém por perceberam suas emoções e problemas.";
+                  imagem.src = 'https://www.lavanguardia.com/files/image_948_465/uploads/2018/06/13/5fa4341134d98.jpeg'
+
+                  break;
+
+               case "Leão":
+                  text = "Características positivas dos leoninos: inteligentes e corajosos, são líderes natos. Por outro lado, são expressivos e determinados: quando colocam algo na mente, pode ter certeza que vão até o fim para conquistá-la.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Leao-shutterstock_1-1.jpg'
+
+                  break;
+
+               case "Virgem":
+                  text = "Características positivas dos virginianos: observação e eficiência são marcas do virginiano, que é bastante atencioso e sincero com os demais e está sempre resolvendo um problema: seja seu ou dos outros.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Virgem-shutterstock_2-1.jpg'
+
+                  break;
+
+               case "Libra":
+                  text = "Características positivas dos librianos: extremamente diplomáticos, são sinceros e buscam ponderar sempre para chegar no melhor resultado. Para isso contam com sua simpatia, boa comunicação e tranquilidade.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Libra-shutterstock_1-1.jpg'
+
+                  break;
+
+               case "Escorpião":
+                  text = "Características positivas dos escorpianos: de uma auto-confiança invejável (a não ser pelos leoninos…rs), têm muita intuição e um instinto protetor maravilhoso. São dedicados e apaixonados.";
+                  imagem.src = 'https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2021/11/03/520964063-escorpiao.jpg'
+
+                  break;
+
+               case "Sagitário":
+                  text = "Características positivas dos sagitarianos: são talentosos, inteligentes e justos. São pessoas estimulantes, que gostam de se divertir e têm bastante espontaneidade e vitalidade.";
+                  imagem.src = 'https://portaledicase.com/wp-content/uploads/2022/11/shutterstock_1188191299.jpg'
+
+                  break;
+
+               case "Capricórnio":
+                  text = "Características positivas dos capricornianos: são persistentes e determinados. Sua organização e ambição natas fazem com que sejam muito eficientes e trabalhadores.";
+                  imagem.src = 'https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2021/12/22/1935855717-sol-em-capricornio-16587.jpg'
+
+                  break;
+
+               case "Aquário":
+                  text = "Características positivas dos aquarianos: idealista e inventivo, o aquariano costuma ser tranquilo e justo, ao mesmo tempo que gosta de transformar e não se acomodar nas situações.";
+                  imagem.src = 'https://img.nsctotal.com.br/wp-content/uploads/2022/10/Signo-de-Aquario-shutterstock_3-1.jpg'
+
+                  break;
+
+               case "Peixes":
+                  text = "Características positivas dos piscianos: ouvintes natos, são confiáveis, intuitivos, prestativos e preocupados com os demais. São adaptáveis e simpáticos, os tornando bem sociáveis.";
+                  imagem.src = 'https://nsc-total-wp.s3.sa-east-1.amazonaws.com/wp-content/uploads/2022/10/Signo-de-Peixes-shutterstock-1.jpg'
+
+                  break;
+
+               default:
+                  text = "Insira um signo existente";
+            }
+
+            document.getElementById("frase").innerHTML = text;
+         }
+      </script>
+
+
+</body>
+
+</html>

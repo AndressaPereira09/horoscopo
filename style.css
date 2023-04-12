@@ -1,0 +1,71 @@
+@font-face {
+    font-family:Harry ;
+    src: url(HARRYP__.TTF);
+}
+
+body {
+    background-image: url(https://cdn2.storyasset.link/a32c5b8b-157a-4eb8-839d-4541e4ac732b/astrology-earth-taurus-virgo-capricorn-1-ms-mfqjyeqhvi.webp);
+    background-size: cover;
+    position: relative;
+    min-height: 88vh;
+}
+
+.conteiner {
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    font-family: Harry;
+    font-size: 90px;
+    color: #ffffff;
+}
+
+input {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+button {
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 7px;
+    border: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#frase {
+    margin: 20px 50px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+#img {
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
